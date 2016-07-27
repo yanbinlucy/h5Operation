@@ -1,0 +1,261 @@
+/**
+ * header公用部分
+ */
+.header {
+    height: 45px;
+    line-height: 45px;
+    background: #252526;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    z-index: 10;
+}
+
+/**
+ * footer公用部分
+ */
+.footer {
+    width: 100%;
+    height: 49px;
+    background: #252526;  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    z-index: 10;
+}
+.footer dl {
+    float: left;
+    width: 33%;
+    height: 49px;
+    font-size: 12px;
+    position: relative;
+}
+.footer dl dt.index-icon,
+.footer dl.selected dt.index-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    margin-left: -12px;
+}
+.footer dl dt.my-icon,
+.footer dl.selected dt.my-icon {
+    width: 24px;
+    height: 25px;
+    position: absolute;
+    top: 4px;
+    right: 50%;
+    margin-right: -12px;
+}
+.footer dl.selected {
+    color: #43b5e7;
+}
+.footer dl dt.index-icon {
+    background-position: -84px -40px;
+}
+.footer dl.selected dt.index-icon {
+    background-position: -56px -40px;
+}
+.footer dl dt.my-icon {
+    background-position: -28px -40px;
+}
+.footer dl.selected dt.my-icon {
+    background-position: 0 -40px;
+}
+.footer dl dt.release-icon {
+    width: 43px;
+    height: 37px;
+    background-position: -46px 0;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    margin-left: -22px;
+}
+.footer dl:hover dt.release-icon {
+    background-position: 0 0;
+}
+.footer dl dt,
+.footer dl dd {
+    text-align:  center;
+    margin: 0;
+}
+.footer dl dd {
+    line-height: 77px;
+}
+
+/**
+ * common-body header a返回按钮部分共用
+ */
+.cb .header {
+    position: relative;
+    a{
+        background-position: -18px 3px;
+        width: 13px;
+        height: 25px;
+        position: absolute;
+        top: 8px;
+        left: 10px;
+    }
+}
+
+/**
+ * 兼容pc端样式(暂不使用)
+ */
+.wrapper-container {
+    max-width: 720px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/**
+ * 定义常用颜色
+ */
+.cr-yellow {
+    color: #fd7f69;
+}
+.cl-blue {
+    color: #43b5e7;
+}
+
+/**
+ * 提示信息样式
+ */
+.form-tip {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 45%;
+    left: 0px;
+    z-index: 11;
+    text-align: center;
+}
+.form-tip-span {
+    display: inline-block;
+    background-color: #767676;
+    border-radius: 5px;
+    padding: 15px 7px;
+    color: #fff7f0;
+    font-size: 1.4rem;
+}
+.ml10 {
+  margin-left: 10px;
+}
+
+/**
+ * loading样式
+ */
+#loading {
+    line-height: 45px;
+    height: 45px;
+    text-align: center;
+}
+#loading img {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.no-data{
+    width: 100%;
+    text-align:center;
+    padding: 20px 0;
+    display: none;
+}
+/**
+ * 提示信息样式
+ */
+.form-tip{
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 45%;
+  left: 0;
+  z-index: 11;
+  text-align: center;
+}
+.form-tip span{
+  display: inline-block;
+  background-color: #767676;
+  border-radius: 5px;
+  padding: 15px 7px;
+  color: #fff7f0;
+  font-size: 14px;
+}
+
+/**
+ * 遮罩层样式
+ */
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    display: none;
+}
+.share-container {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 100%;
+    z-index: 11;
+    display: none;
+}
+.share-container .share-tip {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 225px;
+    height: 130px;
+    background: url(../images/module/share-tip.png) no-repeat;
+    background-size: 225px 130px;
+}
+.share-container .close-tip {
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    width: 217px;
+    right: 40px;
+    top: 160px;
+    background: #949190;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    color: #44322a;
+    font-size: 12px;
+    border: none;
+}
+.form-item a[disabled=disabled].send {
+    background: #eee;
+}
+.status-disabled {
+    background: #eee;
+}
+
+/**
+ * 隐藏头部
+ */
+.hide-header {
+    display: none;
+}
+
+.thin-border {
+    border-width: 0.5px;
+}
+
+//清除浮动
+.clearfix:after {
+    content: '';
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}

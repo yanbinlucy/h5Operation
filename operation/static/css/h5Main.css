@@ -1,0 +1,6 @@
+/**修改html标签的默认样式**/
+@import url('reset.css');
+/**存放sprite图片样式**/
+@import url('sprite.css');
+
+@import url('h5.css');

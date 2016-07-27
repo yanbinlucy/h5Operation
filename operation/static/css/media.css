@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@media only screen and (max-width: 320px) {
+  .db-content img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .form-item span {
+    padding: 6px 10px;
+  }
+
+  .guide-body .content .cont-bg p span {
+    font-size: 16px;
+  }
+
+  .guide-body .content .cont-bg p {
+    font-size: 12px;
+    bottom: 94px;
+    width: 145px;
+    margin-left: -72px;
+  }
+
+  .guide-body .content .cont-bg a {
+    font-size: 16px;
+    width: 135px;
+    height: 28px;
+    line-height: 28px;
+    bottom: 47px;
+    margin-left: -68px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .guide-body .content .cont-bg p {
+    bottom: 112px;
+  }
+
+  .guide-body .content .cont-bg a {
+    bottom: 54px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .detail-banner {
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .detail-banner {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 374px) {
+  .drap-box .db-cont {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/* 高清显示屏(设备像素比例大于等于2)使用2倍图  */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .thin-html .detail-body .top,
+  .thin-html .db-header,
+  .thin-html .db-content,
+  .thin-html .detail-comment .dc-tips,
+  .thin-html .detail-comment .dc-content {
+    border-width: 0.5px;
+  }
+}

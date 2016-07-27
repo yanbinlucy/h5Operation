@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript">
+        var searchKey = window.location.search,//获取url中search部分
+            searchArr = [],//存储search通过'?'分割的数组
+            args = '',//searchArr[1]部分
+            argsArr = [],//存储args通过'&'分割的数组
+            searchObj = {};//
+
+        if(searchKey){
+           searchArr = searchKey.split('?');
+        }
+
+        if (searchArr.length > 0) {
+            args = searchArr[1];
+            argsArr = args.split('&');
+        }
+
+        argsArr.forEach(function(item,index){
+            var itemArr = item.split('=');
+            searchObj[itemArr[0]] = itemArr[1]; 
+        });
+
+        if(searchObj.activity=='uiCompetition'){
+            window.location.href = 'https://api.tonghangshuo.cn/page/shareTopicList.html?topicId=45';
+        }else if(searchObj.activity=='talentRecruit'){
+            window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.caffeed.caffeed&g_f=991653';
+        }
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

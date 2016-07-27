@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html,charset=utf-8">
+    <meta name="description" content="千万职场白领都玩过的测试，别错过哦！">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>超准 | 测一测你的升职空间有多大</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/h5Main.css?t=@@timestamp">
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/images/common/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+    if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+                version = parseInt(v[1], 10);
+        if(version >= 8){
+            document.documentElement.classList.add('thin-html')
+        }
+    }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?@@siteId";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body class="h5-body">
+<img id="shareImg" style="position:fixed;top:0;left:0;opacity:0;width:0;height:0;">
+    <section class="wrapper-container">
+        <div class="header-bar">
+            <div class="hb-wrapper">
+                <img src="/static/images/h5/logo.png">
+                <div class="hb-right">
+                    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.caffeed.caffeed&g_f=991653">打开同行说</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-wrapper">
+            <div class="exam-banner bg-new3">
+                <div class="eb-mask"></div>
+                <p>你的升职空间有多大</p>
+            </div>
+        </div>
+        <div class="exam-box">
+            <p>
+                <span>某个晚上，你在异乡街上疲惫地走着，街道两边有三三两两的灯亮着，你会选择怎样的方式投宿？</span>
+            </p>
+            <ul id="answerList">
+                <li data-id="a">A.<span>选择最近的这一家，老板娘漂亮风骚，但店面条件一般</span></li>
+                <li data-id="b">B.<span>稍远一点的店面，老板娘小家碧玉，还有几味招牌菜，店面整洁大方</span></li>
+                <li data-id="c">C.<span>再远一些的的店面，老板娘气质独特，两只雄狮把门，门前两个壮汉热情招呼</span></li>
+                <li data-id="d">D.<span>最远的那家，老板娘忠厚老实，菜品家常，还有一壶温好的竹叶青</span></li>
+                <li data-id="e">E.<span>在第一家店吃饭，到第四家店住宿</span></li>
+            </ul>
+        </div>
+        <p class="error-tip">＊还有题目没答完！完整回答题目才能得到正确结果！</p>
+        <div class="result-btn">
+            <a href="javascript:;">我要查看结果</a>
+        </div>
+        <div class="foot-banner">
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.caffeed.caffeed&g_f=991653"><img src="/static/images/h5/foot-banner.png"></a>
+        </div>
+    </section>
+<div class="mask" id="mask"></div>
+<div class="result-wrapper" id="resultWrapper">
+    
+</div>
+
+<div id="shareContainer" class="share-container">
+    <div class="share-tip">
+        <p>点击“分享到朋友圈”</p>
+        <p>让好友一起来测测！</p>
+        <span></span>
+    </div>
+    <div class="close-tip">我知道了</div>
+</div>
+</body>
+<script type="text/tpl" id="resultTpl">
+    <div class="result-box">
+        <div class="rb-header">
+            <div class="rb-wrapper <%= data.bg %>">
+                <span class="rb-select"><%= data.score %></span>
+                <span class="close-btn"></span>
+            </div>
+        </div>
+        <p class="rb-title"><%= data.title %></p>
+        <p class="rb-content">
+            <%= data.content %>
+        </p>
+        <div class="share-btn">
+            <a href="javascript:;">分享给好友</a>
+        </div>
+    </div>
+</script>
+
+<!--<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>  -->
+<script src="/static/js/lib/lib.js"></script>
+<script src="/static/js/h5Main.js?t=@@timestamp"></script>
+<script type="text/javascript">
+var _token = 'h5NewYear03';
+require.config({
+    baseUrl: "../static/js"
+});
+require(['h5Main'], function(h5Main) {
+    h5Main.common && h5Main.common();
+    h5Main[_token] && h5Main[_token]();
+});
+</script>
+</html>

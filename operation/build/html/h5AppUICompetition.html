@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html,charset=utf-8">
+    <meta name="description" content="同行说，职场经验和干货分享社区">
+    <meta name="keywords" content="PMCAFF, 36kr, 人人都是产品经理, CSDN, designer news, dribble, 开发者头条, 虎嗅, 图灵社区, 豆瓣, 博客园, 简书, 站酷, 互联网,知乎, 一点资讯, 产品经理, 设计师, 程序员, 同行, 爆料, 百度,微信,脉脉, 职业">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>设计师优秀作品大赛</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/h5Main.css?t=1461811239601">
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/images/common/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+    if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+                version = parseInt(v[1], 10);
+        if(version >= 8){
+            document.documentElement.classList.add('thin-html')
+        }
+    }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?a1f6e87b4ae3207819098c9f386ffdb5";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body class="h5-body ui-body app-body">
+<div id="h5Mobile" class="h5-mobile">
+    <img id="shareImg" src="/static/images/h5/m01/banner.jpg" style="position:fixed;top:0;left:0;opacity:0;width:0;height:0;">
+    <section class="wrapper-container">
+        <div id="firstPage" class="first-page">
+        </div>
+        <div id="secondPage" class="second-page">
+        </div>
+        <!--<div id="btn" class="btn-bottom">
+            <img src="/static/images/h5/competition/btn2.png">
+        </div>-->
+    </section>
+</div>
+</body>
+<script>        
+    (function (doc, win) {    
+        var docEl = doc.documentElement,    
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+        recalc = function () {    
+            var clientWidth = docEl.clientWidth;    
+            if (!clientWidth) return;   
+            if (clientWidth>640) clientWidth = 640; 
+            docEl.style.fontSize = 20 * (clientWidth / 375) + 'px';    
+        };    
+        if (!doc.addEventListener) return;    
+        win.addEventListener(resizeEvt, recalc, false);    
+        doc.addEventListener('DOMContentLoaded', recalc, false);    
+    })(document, window);    
+</script>
+</html>

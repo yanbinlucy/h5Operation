@@ -1,0 +1,35 @@
+/**
+ * 发布页
+ */
+.topic-body .header a,
+.detail-body .header a,
+.release-body .header a,
+.user-portal-body .header a,
+.auth-body .header a,
+.multi-ul li .ii-wrapper:before,
+.cb-location:before,
+.cb-icon .add-pic,
+.cb-icon .add-link,
+.cb-link:before,
+.cb-link .link-delete,
+.multi-ul li .upload-img-cont .delete-img,
+.cancel-btn {
+    background: url(../images/sprite/releaseIcon.png) no-repeat;
+    background-size: 160px 160px;
+}
+/**
+ * footer bar
+ */
+.footer dl dt {
+    background: url(../images/sprite/indexIcon.png) no-repeat;
+    background-size: 140px 140px;
+}
+/**
+ * 返回按钮和认证邮箱图标
+ */
+.cb .header a,
+.db-auth:before,
+.auth-tips p:nth-child(5) a:before {
+    background: url(../images/sprite/certificate.png) no-repeat;
+    background-size: 50px 50px;
+}

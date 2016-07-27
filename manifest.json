@@ -1,0 +1,18 @@
+{
+    "static_prefix":"/static",
+    "local":{},
+    "img_prefix":"/static",
+    "encoding":"utf-8",
+    "compile_folder":"server",
+    "require_css_modules":["main","rank","txmz"],
+    "test":{
+        "img_prefix":"/static",
+        "static_prefix":"/static"
+    },
+    "require_css_modules":["main","member"],
+    "online":{
+        "static_prefix":"http://p{num}.wan.sogoucdn.com/r4",
+        "img_prefix":"http://p{num}.wan.sogoucdn.com/r4",
+        "num":7
+    }
+}

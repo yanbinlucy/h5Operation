@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html,charset=utf-8">
+    <meta name="description" content="同行说，职场经验和干货分享社区">
+    <meta name="keywords" content="PMCAFF, 36kr, 人人都是产品经理, CSDN, designer news, dribble, 开发者头条, 虎嗅, 图灵社区, 豆瓣, 博客园, 简书, 站酷, 互联网,知乎, 一点资讯, 产品经理, 设计师, 程序员, 同行, 爆料, 百度,微信,脉脉, 职业">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>史上最虐心色盲测试，慎入！</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/h5Main.css?t=@@timestamp">
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/images/common/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+    if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+                version = parseInt(v[1], 10);
+        if(version >= 8){
+            document.documentElement.classList.add('thin-html')
+        }
+    }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?@@siteId";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body class="h5-body color-body">
+<div id="h5Mobile" class="h5-mobile">
+<!-- 旋屏提示 S -->
+<!--<div class="mask" id="mask">
+    <div class="mask-box">
+        <div class="mask-pic"><i></i></div>
+        <span>为了更好的体验，请使用竖屏浏览</span>
+    </div>
+</div>-->
+    <img id="shareImg" src="/static/images/h5/m01/banner.jpg" style="position:fixed;top:0;left:0;opacity:0;width:0;height:0;">
+    <section class="wrapper-container">
+        <div class="header-bar">
+            <div class="hb-wrapper">
+                <img src="/static/images/h5/m02/logo.png">
+                <div class="hb-right">
+                    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.caffeed.caffeed&g_f=991653">立即加入</a>
+                </div>
+            </div>
+        </div>
+        <div id="firstPage" class="first-page">
+            <div class="fp-title pre-move">
+                <img src="/static/images/h5/m02/title.png">
+            </div>
+            <div class="fp-svg-01 pre-move">
+                <embed src="/static/images/h5/m02/fp-01.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
+            </div>
+            <div class="fp-svg-02 pre-move">
+                <embed src="/static/images/h5/m02/fp-02.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
+            </div>
+            <div id="fpBtn" class="fp-btn pre-move">
+                <img src="/static/images/h5/m02/button.png">
+            </div>
+        </div>
+        <div id="secondPage" class="second-page">
+            <p class="sp-title">请选出四个答案里和题目图中小点点一样的颜色</p>
+            <div class="step-header">
+                <div class="step-header-bg">
+                    <img id="shbBg" src="/static/images/h5/m02/11.png">
+                    <img id="shbCover" class="step-pointer" src="/static/images/h5/m02/111.png">
+                </div>
+                <div class="step-item">
+                    <span data-id="0"></span>
+                    <span data-id="0"></span>
+                    <span data-id="0"></span>
+                    <span data-id="0"></span>
+                </div>
+            </div>
+        </div>
+        <div id="thirdPage" class="third-page">
+            <div id="resultContainer">
+                
+            </div>
+            <div class="result-btn">
+                <img class="rb-retry" src="/static/images/h5/m02/retry.png">
+                <img class="rb-share" src="/static/images/h5/m02/share.png">
+            </div>
+        </div>
+        <div class="cb-tips">
+            <p>同行说-你的职场加油站</p>
+        </div>
+    </section>
+    <div id="shareContainer" class="share-container">
+        <div class="share-tip">
+            <p>点击“分享到朋友圈”</p>
+            <p>让好友一起来测测！</p>
+            <span></span>
+        </div>
+        <div class="close-tip">我知道了</div>
+    </div>
+    <div class="form-tip"><span></span></div>
+</div>
+<!--<div id="pc" class="h5-pc">
+    <p>为了更好的体验请用手机</p>
+</div>-->
+</body>
+<script type="text/tpl" id="resultTpl">
+    <div class="tp-header">
+        <embed src="/static/images/h5/m02/result.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        <p><span><%= data.score %></span>分</p>
+    </div>
+    <p class="result-tip"><%= data.result %></p>
+</script>
+<script src="/static/js/lib/lib.js"></script>
+<script src="/static/js/h5Main.js?t=@@timestamp"></script>
+<script type="text/javascript">
+var _token = 'h5SelectColor';
+require.config({
+    baseUrl: "../static/js"
+});
+require(['h5Main'], function(h5Main) {
+    h5Main.common && h5Main.common();
+    h5Main[_token] && h5Main[_token]();
+});
+</script>
+<script>        
+    (function (doc, win) {    
+        var docEl = doc.documentElement,    
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+        recalc = function () {    
+        var clientWidth = docEl.clientWidth;    
+        if (!clientWidth) return;    
+        docEl.style.fontSize = 20 * (clientWidth / 375) + 'px';    
+    };    
+    if (!doc.addEventListener) return;    
+    win.addEventListener(resizeEvt, recalc, false);    
+    doc.addEventListener('DOMContentLoaded', recalc, false);    
+    })(document, window);    
+</script>
+</html>
